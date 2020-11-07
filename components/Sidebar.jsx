@@ -10,21 +10,27 @@ function Sidebar() {
           <li
             style={{ cursor: "pointer" }}
             onClick={() => router.push("/")}
-            className="py-6 hover:bg-indigo-700 text-2xl  text-white"
+            className={`py-2 hover:bg-indigo-700 text-xl  text-white ${
+              router.pathname === "/" ? "font-bold" : ""
+            }`}
           >
             <Link href="/">Home</Link>
           </li>
           <li
             style={{ cursor: "pointer" }}
             onClick={() => router.push("/skills")}
-            className="py-6 hover:bg-indigo-700 text-2xl  text-white"
+            className={`py-2 hover:bg-indigo-700 text-xl  text-white ${
+              router.pathname === "/skills" ? "font-bold" : ""
+            }`}
           >
             <Link href="/skills">My Skills</Link>
           </li>
           <li
             style={{ cursor: "pointer" }}
             onClick={() => router.push("/about")}
-            className="py-6 hover:bg-indigo-700 text-2xl  text-white"
+            className={`py-2 hover:bg-indigo-700 text-xl  text-white ${
+              router.pathname === "/about" ? "font-bold" : ""
+            }`}
           >
             <Link href="/about">About me</Link>
           </li>

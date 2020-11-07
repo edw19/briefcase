@@ -6,20 +6,21 @@ export default function index() {
       <div className="flex min-h-screen">
         <div className="m-auto">
           <div className="container">
-            <div className="container grid grid-cols-3">
+            <div className="container  grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center">
               <img
                 src="/assets/edwin.png"
-                className="rounded-full col-start-2 object-center"
+                className="rounded-full sm:col-start-2 md:col-start-2 lg:col-start-2  object-center"
               />
             </div>
-            <h1 className="text-white text-2xl sm:text-2xl md:text-4xl lg:text-6xl xl:text-6xl text-center">
-              Edwin Patricio Narváez
+            <h1 className="text-white animated-pulse text-2xl sm:text-2xl md:text-4xl lg:text-6xl xl:text-6xl text-center">
+              hi, I'm Edwin Narváez
             </h1>
-            <p className="text-white text-xl sm:text-xl text-center">
-              I'm Frontend developer
+            <p className="text-white text-xl sm:text-xl md:text-2xl text-center">
+              Frontend developer
             </p>
             <p className="text-white text-xl text-center mt-5 font-light ">
-              Nowadays i'm studing Computer engineering
+              I want to help people make in your work better through quality
+              software.
             </p>
           </div>
         </div>
