@@ -1,7 +1,8 @@
 import Layout from "../components/Layout";
 
 const prefix =
-  process.env.NODE_ENV === "production" ? process.env.URL_DEPLOY : "";
+  process.env.URL_DEPLOY || "";
+
 
 function index() {
   return (

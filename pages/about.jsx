@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
   
-const prefix = process.env.NODE_ENV === "production" ? process.env.URL_DEPLOY : ''
+const prefix =  process.env.URL_DEPLOY || ''
 
 export default function about() {
   return (
