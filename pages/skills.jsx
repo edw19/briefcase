@@ -68,6 +68,14 @@ const skills = [
     uri: "https://www.mongodb.com/",
     uriImage: "https://cdn.iconscout.com/icon/free/png-512/mongodb-226029.png",
   },
+  {
+    id: 9,
+    title: "Git",
+    description:
+      "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+    uri: "https://git-scm.com/",
+    uriImage: "https://git-scm.com/images/logo@2x.png",
+  },
 ];
 
 function Skills() {
@@ -77,7 +85,7 @@ function Skills() {
         <title>Edwin Narváez - Skills</title>
       </Head>
       <div className="flex min-h-screen">
-        <div className="grid grid-cols-3 m-auto w-full">
+        <div className="grid grid-cols-4 m-auto w-full">
           {skills.map((skill) => (
             <div key={skill.id} className="p-5 text-center">
               <a href={skill.uri} target="_blank">
