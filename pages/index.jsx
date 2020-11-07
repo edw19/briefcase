@@ -1,14 +1,15 @@
 import Layout from "../components/Layout";
 
-const prefix = "/briefcase";
+const prefix =
+  process.env.NODE_ENV === "production" ? process.env.URL_DEPLOY : "";
 
-export default function index() {
+function index() {
   return (
     <Layout>
       <div className="flex min-h-screen">
         <div className="m-auto">
           <div className="container">
-            <div className="container  grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center">
+            <div className="container grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center">
               <img
                 src={`${prefix + "/assets/edwin.png"}`}
                 className="rounded-full sm:col-start-2 md:col-start-2 lg:col-start-2  object-center"
@@ -30,3 +31,5 @@ export default function index() {
     </Layout>
   );
 }
+
+export default index;

@@ -3,7 +3,10 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    './components/**/*.js',
+    './pages/**/*.js',
+  ],
   target: 'relaxed',
   prefix: '',
   important: false,

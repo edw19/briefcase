@@ -1,22 +1,25 @@
 {
   "name": "briefcase",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start"
+    "tailwind-build": "tailwindcss build styles/tailwind.css -o styles/styles.css",
+    "build-css": "cross-env NODE_ENV=production tailwindcss build styles/tailwind.css -o styles/main.css",
+    "dev-css": "cross-env NODE_ENV=development tailwindcss build styles/tailwind.css -o styles/main.css",
+    "next-dev": "next dev",
+    "next-build": "next build",
+    "dev": "concurrently \"npm run next-dev\" \"npm run tailwind-build\"",
+    "build": "concurrently \"npm run next-build\" \"npm run tailwind-build\"",
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "autoprefixer": "^10.0.1",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.6"
   }
 }

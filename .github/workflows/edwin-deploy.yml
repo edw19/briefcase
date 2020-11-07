@@ -26,7 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build
+      env:
+        URL_DEPLOY: /briefcase
     - run: npm run export
+      env:
+        URL_DEPLOY: /briefcase
     - run: touch ./out/.nojekyll
       
     - name: Deploy 🚀
