@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 
+const prefix = "/briefcase";
+
 export default function about() {
   return (
     <Layout>
@@ -12,7 +14,7 @@ export default function about() {
           <div className="grid grid-cols-3 mb-5">
             <div className="col-start-2 flex flex-row">
               <img
-                src="/assets/edwin.png"
+                src={`${prefix + "/assets/edwin.png"}`}
                 alt="Edwin Patricio Narváez"
                 className="rounded-full"
                 width="50px"

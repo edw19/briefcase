@@ -1,5 +1,7 @@
 import Layout from "../components/Layout";
 
+const prefix = "/briefcase";
+
 export default function index() {
   return (
     <Layout>
@@ -8,7 +10,7 @@ export default function index() {
           <div className="container">
             <div className="container  grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center">
               <img
-                src="/assets/edwin.png"
+                src={`${prefix + "/assets/edwin.png"}`}
                 className="rounded-full sm:col-start-2 md:col-start-2 lg:col-start-2  object-center"
               />
             </div>
