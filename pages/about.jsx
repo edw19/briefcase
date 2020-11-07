@@ -14,7 +14,7 @@ export default function about() {
           <div className="grid grid-cols-3 mb-5">
             <div className="col-start-2 flex flex-row">
               <img
-                src={`${prefix + "/assets/edwin.png"}`}
+                src={prefix + "/assets/edwin.png"}
                 alt="Edwin Patricio Narváez"
                 className="rounded-full"
                 width="50px"
