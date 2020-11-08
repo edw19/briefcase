@@ -1,5 +1,4 @@
-import '../styles/styles.css'
-
+import '../styles/tailwind.css'
 
 const prefix =
   process.env.URL_DEPLOY || "";
