@@ -1,8 +1,6 @@
 import Layout from "../components/Layout";
 
-const prefix =
-  process.env.URL_DEPLOY || "";
-
+const prefix = "/briefcase";
 
 function index() {
   return (

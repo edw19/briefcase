@@ -2,10 +2,10 @@
   "name": "briefcase",
   "version": "0.1.0",
   "scripts": {
-    "export": "next export",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "next": "^10.0.0",
