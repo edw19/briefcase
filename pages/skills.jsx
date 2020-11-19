@@ -85,9 +85,9 @@ function Skills() {
         <title>Edwin Narváez - Skills</title>
       </Head>
       <div className="flex min-h-screen">
-        <div className="grid grid-cols-4 m-auto w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-auto w-full">
           {skills.map((skill) => (
-            <div key={skill.id} className="p-5 text-center">
+            <div key={skill.id} className="p-5 text-center hover:bg-gray-900">
               <a href={skill.uri} target="_blank">
                 <div className="container grid grid-cols-3 mb-5">
                   <img

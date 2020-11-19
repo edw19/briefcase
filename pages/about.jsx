@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
-  
-const prefix =  '/briefcase'
+
+const prefix = "/briefcase";
 
 export default function about() {
   return (
@@ -11,8 +11,8 @@ export default function about() {
       </Head>
       <div className="flex min-h-screen">
         <div className="m-auto text-white">
-          <div className="grid grid-cols-3 mb-5">
-            <div className="col-start-2 flex flex-row">
+          <div className="grid grid-cols-1 md:grid-cols-4 mb-5">
+            <div className=" mx-5 md:col-start-2  md:col-span-2 flex flex-row">
               <img
                 src={prefix + "/assets/edwin.png"}
                 alt="Edwin Patricio Narváez"
@@ -23,8 +23,8 @@ export default function about() {
               <h1 className="text-2xl ml-5">Hi! I'm Edwin 👋</h1>
             </div>
           </div>
-          <div className="grid grid-cols-3">
-            <div className="col-start-2 text-xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 ">
+            <div className="md:col-start-2 md:col-span-2 mx-5 text-xl">
               Nowadays i'm studing Computer engineering. I was born in 1994 (you
               can do the math). Affter graduating high School and ramble for two
               years I find in the developing my passion, the code{" "}

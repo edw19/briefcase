@@ -1,12 +1,10 @@
 import '../styles/tailwind.css'
+import '../styles/main.css'
 
-const prefix =
-  process.env.URL_DEPLOY || "";
+const prefix = "/briefcase"
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} >
-    <link rel="shortcut icon" href={prefix + '/favicon.ico'} />
-  </Component>
+  return <Component {...pageProps} />
 }
 
 export default MyApp
