@@ -7,7 +7,7 @@ function NavBar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <nav className="bg-gray-900 md:hidden ">
+    <nav className="bg-lightBlue-500 dark:bg-lightBlue-900 md:hidden ">
       <div className="flex items-center justify-between px-4 py-3">
         <div className="uppercase text-white font-medium">
           <Link href="/">Edwin</Link>
@@ -36,13 +36,13 @@ function NavBar() {
         </div>
       </div>
       <div className={open ? "block" : "hidden"}>
-        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-purple-700" onClick={() => router.push('/')}>
+        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-lightBlue-600" onClick={() => router.push('/')}>
           <Link href="/">Home</Link>
         </div>
-        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-purple-700" onClick={() => router.push('/about')}>
+        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-lightBlue-600" onClick={() => router.push('/about')}>
           <Link href="/about">About</Link>
         </div>
-        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-purple-700" onClick={() => router.push('/skills')}>
+        <div style={{cursor: 'pointer'}} className="block px-4 text-white py-3 hover:bg-lightBlue-600" onClick={() => router.push('/skills')}>
           <Link href="/skills">Skills</Link>
         </div>
       </div>

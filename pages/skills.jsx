@@ -17,7 +17,7 @@ const skills = [
       "Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build",
     uri: "https://tailwindcss.com/",
     uriImage:
-      "https://tailwindcss.com/_next/static/media/tailwindcss-mark.6ea76c3b72656960a6ae5ad8b85928d0.svg",
+      "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
   },
   {
     id: 3,
@@ -84,10 +84,10 @@ function Skills() {
       <Head>
         <title>Edwin Narváez - Skills</title>
       </Head>
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen pt-10 px-10">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-auto w-full">
           {skills.map((skill) => (
-            <div key={skill.id} className="p-5 text-center hover:bg-gray-900">
+            <div key={skill.id} className="p-5 text-center hover:bg-cyan-300  dark:hover:bg-blueGray-700">
               <a href={skill.uri} target="_blank">
                 <div className="container grid grid-cols-3 mb-5">
                   <img
@@ -97,9 +97,9 @@ function Skills() {
                     width="150px"
                   />
                 </div>
-                <span className="text-white mt-10">{skill.title}</span>
+                <span className=" mt-10 dark:text-white">{skill.title}</span>
               </a>
-              <p className="text-white mt-5">{skill.description}</p>
+              <p className=" mt-5 dark:text-white">{skill.description}</p>
             </div>
           ))}
         </div>

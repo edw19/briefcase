@@ -13,3 +13,19 @@
   stroke: #4691f6;
   stroke-width: 1;
 }
+/* icons dark theme */
+.svg-icon-light {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon-light path,
+.svg-icon-light polygon,
+.svg-icon-light rect {
+  fill: #faee11;
+}
+
+.svg-icon-light circle {
+  stroke: #faee11;
+  stroke-width: 1;
+}
