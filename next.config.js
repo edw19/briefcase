@@ -1,4 +1,4 @@
 module.exports = {
-    basePath: '/briefcase',
-    assetPrefix: '/briefcase'
+    basePath: process.env.URL_DEPLOY,
+    assetPrefix: process.env.URL_DEPLOY
 }

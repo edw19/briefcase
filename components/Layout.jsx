@@ -4,12 +4,14 @@ import NavBar from "./NavBar";
 import Sidebar from "./Sidebar";
 import DarkMode from "./DarkMode";
 
+const prefix = process.env.URL_DEPLOY || "";
+
 function Layout({ children }) {
   return (
     <div>
       <Head>
         <title>Edwin Narváez</title>
-        <link rel="shortcut icon" href="briefcase/favicon.ico" />
+        <link rel="shortcut icon" href={prefix + "/favicon.ico"} />
       </Head>
       <NavBar />
       <div className="min-h-screen">

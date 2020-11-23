@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 
-const prefix = "/briefcase";
+const prefix = process.env.URL_DEPLOY || "";
 
 export default function about() {
   return (
