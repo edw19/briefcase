@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const prefix = process.env.URL_DEPLOY || '';
+const prefix = process.env.NODE_ENV === 'production' ? "/briefcase" : "";
 
 const initialTheme = () => {
   if (
